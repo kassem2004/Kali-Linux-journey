@@ -16,7 +16,8 @@ chattr| Changes file attributes on a Linux file system.
 # Netwroks
 Commands learnt:
 ```
-ping | Sends echo requests to test network connectivity.
+ping    | Sends echo requests to test network connectivity.
+netstat | Display network connections and stats with IP addresses and Port numbers.
 ```
    
 1. DNS,
