@@ -11,13 +11,17 @@ sudo  | Runs commands with superuser privileges.
 nano  | Opens the nano text editor.
 cat   | Concatenates and displays the content of files.
 chattr| Changes file attributes on a Linux file system.
+curl  | Transfers data to or from a server, supports various protocols like HTTP, HTTPS, FTP.
+unzip | Extracts files from a ZIP archive.
 ```
 
 # Netwroks
 Commands learnt:
 ```
 ping    | Sends echo requests to test network connectivity.
-netstat | Display network connections and stats with IP addresses and Port numbers.
+netstat | Displays network connections and stats with IP addresses and port numbers.
+ifconfig| Configures or displays network interface parameters.
+openvpn | Establishes a VPN connection using OpenVPN configuration files.
 ```
    
 1. DNS,
@@ -28,3 +32,10 @@ netstat | Display network connections and stats with IP addresses and Port numbe
    sudo chattr +i /etc/resolv.conf 
 ```
 This just removes the immutability of the resolv.conf file, then opens the nano text editor for me to change the DNS servers being used, then adds the immutability again.
+
+2. VPN,
+     I added a VPN by downloading a VPN book from OpenVPN, then used this to activate it:
+     ```
+     sudo openvpn --config vpnbook-de220-tcp443.ovpn
+     ```
+     I then went to check my local IP using ``` ifconfig ``` and also checked that my public IP has changed by using ``` curl ifconfig.me ``` where ifconfig.me is a web-          service that returns your public IP that is being shown to the internet. Also learnt about the ```unzip``` command used for .zip files.
